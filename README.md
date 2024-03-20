@@ -1,7 +1,7 @@
 # DatUS
 Data-driven Unsupervised Semantic Segmentation with Pre-trained Self-supervised Vision Transformer
 
-Follow the given procedure to replicate the DatUS process:
+Follow the given procedure to replicate the DatUS:
        
     1. Setup and activate the environment:
         1. Run CMD: conda env create -f myenv.yml
