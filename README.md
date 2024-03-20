@@ -1,20 +1,8 @@
 # DatUS
 Data-driven Unsupervised Semantic Segmentation with Pre-trained Self-supervised Vision Transformer
 
-#Data directory organization
-Data
-'
-'
-suim
-'
-'''''''''''''''''''''''''''''''''''''''''''''''''''
-'                                                 '
-train                                              val
-'                                                  '
-'''''''''''''                                      '''''''''''  
-'           '                                      '         '
-images       true_masks                            images    true_masks
-
+#Data directory organization: 
+Data---->suim----->train(images, true_masks), val(images, true_masks)
 
 #Follow the given procedure to replicate the DatUS:
        
