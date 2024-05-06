@@ -2,6 +2,10 @@
 #### This [Paper](https://ieeexplore.ieee.org/document/10488760) is accepted in 'IEEE Transactions on Cognitive and Developmental Systems (TCDS)'.
 #### [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/datus-2-data-driven-unsupervised-semantic/unsupervised-semantic-segmentation-on-suim)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-on-suim?p=datus-2-data-driven-unsupervised-semantic)
 
+<div align="center">
+  <img width="100%" alt="DatUS_Workflow" src="DatUS_Animation.gif">
+</div>
+
 ## Data directory organization
 ```
 data
