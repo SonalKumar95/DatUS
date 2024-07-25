@@ -216,18 +216,17 @@ if __name__ == '__main__':
             for t in range(len(train_list)):
                 new_source  = os.path.join(source, train_list[t])
                 shutil.copy2(new_source, target)
+            # Comment our line 220 t0 226 to store image-wise valid segments
+            '''target1 = args.crop_path
+            if not os.path.exists(target1):
+                os.mkdir(target1)
+            for name in tqdm(os.listdir(target)):
+                if not os.path.exists(os.path.join(target1, name.rstrip('.jpg'))):
+                    os.mkdir(os.path.join(target1, name.rstrip('.jpg')))
+                shutil.copy(os.path.join(target, name),os.path.join(target1, name.rstrip('.jpg')))'''
 
         df.to_csv('./outputs/FilterList.csv')
         df_n.to_csv('./outputs/NoiseList.csv')
-
-        target1 = args.crop_path
-
-        if not os.path.exists(target1):
-            os.mkdir(target1)
-        for name in tqdm(os.listdir(target)):
-            if not os.path.exists(os.path.join(target1, name.rstrip('.jpg'))):
-                os.mkdir(os.path.join(target1, name.rstrip('.jpg')))
-            shutil.copy(os.path.join(target, name),os.path.join(target1, name.rstrip('.jpg')))
 
         print('Extarcting Features.')
         extract_feature_pipeline(args)
