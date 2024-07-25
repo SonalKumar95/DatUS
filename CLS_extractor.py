@@ -164,7 +164,7 @@ if __name__ == '__main__':
     parser.add_argument("--local_rank", default=0, type=int, help="Please ignore and do not set this argument.")
     parser.add_argument('--crop_path', default='./outputs/crop_dir', type=str)
     parser.add_argument('--split', default='train', type=str, help='dataset split.')
-    parser.add_argument('--viz_validSegs', type=bool, default=False, help='Visualize valid segments.')
+    parser.add_argument('--viz_validSegs', type=bool, default=True, help='Visualize valid segments (set False for large dataset).')
 
     args = parser.parse_args()
 
@@ -216,14 +216,14 @@ if __name__ == '__main__':
             for t in range(len(train_list)):
                 new_source  = os.path.join(source, train_list[t])
                 shutil.copy2(new_source, target)
-            # Comment our line 220 t0 226 to store image-wise valid segments
-            '''target1 = args.crop_path
+            # Comment our line 220 t0 226 if image-wise visualization is not required
+            target1 = args.crop_path
             if not os.path.exists(target1):
                 os.mkdir(target1)
             for name in tqdm(os.listdir(target)):
                 if not os.path.exists(os.path.join(target1, name.rstrip('.jpg'))):
                     os.mkdir(os.path.join(target1, name.rstrip('.jpg')))
-                shutil.copy(os.path.join(target, name),os.path.join(target1, name.rstrip('.jpg')))'''
+                shutil.copy(os.path.join(target, name),os.path.join(target1, name.rstrip('.jpg')))
 
         df.to_csv('./outputs/FilterList.csv')
         df_n.to_csv('./outputs/NoiseList.csv')
