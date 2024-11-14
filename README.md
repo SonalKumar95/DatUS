@@ -1,4 +1,4 @@
-# DatUS: Data-driven Unsupervised Semantic Segmentation with Pre-trained Self-supervised Vision Transformer
+# DatUS: Data-driven Unsupervised Semantic Segmentation with Pre-trained Self-supervised Vision Transformer ![Views](https://komarev.com/ghpvc/?username=SonalKumar95)
 #### This [Paper](https://ieeexplore.ieee.org/document/10488760) is accepted in 'IEEE Transactions on Cognitive and Developmental Systems (TCDS)'.
 #### [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/datus-2-data-driven-unsupervised-semantic/unsupervised-semantic-segmentation-on-suim)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-on-suim?p=datus-2-data-driven-unsupervised-semantic)
 
