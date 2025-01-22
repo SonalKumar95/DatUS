@@ -1,5 +1,5 @@
-# DatUS: Data-driven Unsupervised Semantic Segmentation with Pre-trained Self-supervised Vision Transformer ![Views](https://komarev.com/ghpvc/?username=SonalKumar95)
-#### This [Paper](https://ieeexplore.ieee.org/document/10488760) is accepted in 'IEEE Transactions on Cognitive and Developmental Systems (TCDS)'.
+# DatUS: Data-driven Unsupervised Semantic Segmentation with Pre-trained Self-supervised Vision Transformer![Views](https://komarev.com/ghpvc/?username=SonalKumar95)
+#### This [Paper](https://ieeexplore.ieee.org/document/10488760) is published in 'IEEE Transactions on Cognitive and Developmental Systems (TCDS)'.
 #### [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/datus-2-data-driven-unsupervised-semantic/unsupervised-semantic-segmentation-on-suim)](https://paperswithcode.com/sota/unsupervised-semantic-segmentation-on-suim?p=datus-2-data-driven-unsupervised-semantic)
 
 ## DatUS Workflow
@@ -76,17 +76,13 @@ dataset_name
         2. Run CMD: python color_Mask.py --n_clusters 6 --t_clusters 6 --split train --mask_path ‘path/to/grayMask’ --map_path ‘path/to/map.csv’
 ```
 
-## Citation
+## Cite Us
 ```
-@ARTICLE{10488760,
+@article{kumar2024datus,
+  title={DatUS: Data-driven Unsupervised Semantic Segmentation with Pre-trained Self-supervised Vision Transformer},
   author={Kumar, Sonal and Sur, Arijit and Baruah, Rashmi Dutta},
-  journal={IEEE Transactions on Cognitive and Developmental Systems}, 
-  title={DatUS: Data-driven Unsupervised Semantic Segmentation with Pre-trained Self-supervised Vision Transformer}, 
+  journal={IEEE Transactions on Cognitive and Developmental Systems},
   year={2024},
-  volume={},
-  number={},
-  pages={1-14},
-  keywords={Training;Task analysis;Transformers;Semantic segmentation;Feature extraction;Visualization;Semantics;Self-supervised learning;vision transformer;unsupervised learning;semantic segmentation;representation learning;computer vision;deep learning},
-  doi={10.1109/TCDS.2024.3383952}}
+  publisher={IEEE}
+}
 ```
-
