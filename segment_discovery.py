@@ -155,7 +155,9 @@ def main(args):
                     adj[i][j] = 0
 
         louvain = Louvain()#.to(device)
-        labels = louvain.fit_transform(adj)
+        #labels = louvain.fit_transform(adj)
+        labels = louvain.fit_predict(adj)
+        
         
         labels_unique, counts = np.unique(labels, return_counts=True)
         #print(labels_unique, counts)
